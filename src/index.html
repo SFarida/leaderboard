@@ -21,24 +21,28 @@
               <h2>Recent scores</h2>
             </div>
             <div class="">
-              <button class="btn btn-outline-secondary">refresh</button>
+              <button class="btn btn-outline-secondary" id="refresh">refresh</button>
             </div>
           </div>
-          <div class="data border border-dark"></div>
+          <div class="border border-dark">
+            <ul class="list-group list-group-flush" id="scoreList">
+              
+            </ul>
+          </div>
         </div>
         <div>
           <div>
             <h2>Add your score</h2>
           </div>
           <div class="form">
-            <form>
+            <form id="form">
               <div class="mb-3">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+                <input type="text" class="form-control" id="name" placeholder="Your name">
               </div>
               <div class="mb-3">
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Your score">
+                <input type="number" class="form-control" id="score" placeholder="Your score">
               </div>
-              <div class="mb-3">
+              <div class="mb-3 d-flex justify-content-end">
                 <button type="submit" class="btn btn-outline-secondary">Submit</button>
               </div>
             </form>
