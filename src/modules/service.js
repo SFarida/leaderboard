@@ -1,5 +1,3 @@
-/* eslint-disable import/extensions */
-/* eslint-disable no-unused-vars */
 import { endPoints } from './config.js';
 import {
   getGameId, storeId, storeGame, getGames,
@@ -31,7 +29,7 @@ export const gameScores = () => {
       },
     )
     .catch(
-      (error) => null,
+      () => null,
     );
 };
 
@@ -46,7 +44,7 @@ export const getScores = (gameId) => {
       },
     )
     .catch(
-      (error) => null,
+      () => null,
     );
 };
 
@@ -64,12 +62,12 @@ export const postScores = (gameId, scoreObj) => {
       (response) => response.json(),
     )
     .then(
-      (response) => {
+      () => {
         getScores(getGameId());
         document.getElementById('form').reset();
       },
     )
     .catch(
-      (error) => null,
+      () => null,
     );
 };

@@ -1,9 +1,8 @@
-/* eslint-disable import/extensions */
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { gameScores, getScores, postScores } from './modules/service.js';
-import { getGameId, getGames } from './modules/storage';
-import { loadScores } from './modules/renderScores';
+import { getGameId, getGames } from './modules/storage.js';
+import { loadScores } from './modules/renderScores.js';
 
 let allScores = getGames();
 const gameId = getGameId();
